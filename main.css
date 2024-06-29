@@ -55,3 +55,29 @@ body {
 		bottom: 0;
 	}
 }
+h1 {
+	position: absolute;
+	top: 60px;
+	left: 60px;
+	text-transform: uppercase;
+}
+h1 span {
+	display: inline-block;
+	font-size: 50px;
+	color: #fff;
+	text-shadow: 2px 2px 5px #000;
+	animation: rotate-heading 2s 1s linear forwards;
+	opacity: 0;
+}
+@keyframes rotate-heading {
+	from {
+		transform: rotateY(90deg);
+		filter: blur(8px);
+		opacity: 0;
+	}
+	to {
+		transform: rotateY(0);
+		filter: blur(0);
+		opacity: 1;
+	}
+}
